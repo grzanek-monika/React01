@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import Copyright from '../Copyright/Copyright.js';
 
 function Footer(props){
     return (
@@ -11,6 +12,7 @@ function Footer(props){
                     <li>Contact: {props.contactEmail}, 
                         {props.companyData.city} </li>
                 </ul>
+            <Copyright year='202X' />
             </footer>
         </div>
     )
