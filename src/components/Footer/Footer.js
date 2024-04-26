@@ -9,9 +9,7 @@ const elements2 = ["contact", "legal"];
 
 
 function Footer(props){
-    for( const [index, value] of elements1.entries()) {
-        items.push(<li>{value}</li>);
-    }
+    elements1.forEach( value => items.push(<li>{value}</li>))
 
     let isLogged = false;
     let button;
