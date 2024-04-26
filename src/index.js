@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import HeadingStyledComponent from './components/HeadingStyledComponent/HeadingStyledComponent.js';
 import Heading from './components/Heading/Heading.js';
 import App from './App';
 import Footer from './components/Footer/Footer.js';
@@ -15,6 +16,7 @@ const companyData = {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <HeadingStyledComponent />
     <Heading headerTitle="Welcome on page"/>
     <App />
     <Footer companyData={companyData} contactEmail="admin@example.com" />
